@@ -1,0 +1,33 @@
+{
+  "name": "http-resource",
+  "version": "1.0.0",
+  "description": "create the resource class.",
+  "main": "dist/http/resource.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "author": "atomita",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atomita/http-resource.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.1.1",
+    "lodash": "^3.10.1",
+    "superagent": "^1.6.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-newer": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.1",
+    "gulp-watch": "^4.3.5",
+    "gulp-wisp": "0.0.1",
+    "wisp": "^0.10.0"
+  }
+}
