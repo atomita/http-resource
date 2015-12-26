@@ -1,0 +1,49 @@
+{
+  "name": "example-of-http-resource",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/http/resource.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jspm": "jspm",
+    "gulp": "gulp"
+  },
+  "author": "atomita",
+  "license": "MIT",
+  "dependencies": {
+    "http-resource": "^1.0.0",
+    "vue": "^1.0.13"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-newer": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.1.1",
+    "gulp-uglify": "^1.5.1",
+    "gulp-watch": "^4.3.5",
+    "gulp-webserver": "^0.9.1",
+    "gulp-wisp": "0.0.1",
+    "imagemin-pngcrush": "^4.1.0",
+    "jspm": "^0.16.19",
+    "nib": "^1.1.0",
+    "stylus": "^0.53.0",
+    "wisp": "^0.10.0"
+  },
+  "jspm": {
+    "dependencies": {
+      "http-resource": "npm:http-resource@^1.0.0",
+      "vue": "npm:vue@^1.0.13"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}

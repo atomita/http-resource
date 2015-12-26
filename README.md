@@ -1,1 +1,1 @@
-# http-resource
+# example of http-resource
