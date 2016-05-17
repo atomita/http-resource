@@ -4,6 +4,15 @@
             [bluebird]
             [lodash]))
 
+(defmacro ->
+  [& operations]
+  (reduce
+   (fn [form operation]
+     (cons (first operation)
+           (cons form (rest operation))))
+   (first operations)
+   (rest operations)))
+
 (defn- request
   [method url params options clazz]
   (set! options (or options {}))
@@ -38,7 +47,7 @@
    (.then (fn to-resource [response]
             (bluebird. (fn [resolve reject]
                          (if options.is-array
-                           (resolve (lodash.map (fn [record] (clazz. record response))))
+                           (resolve (lodash.map response.body (fn [record] (clazz. record response))))
                            (resolve (clazz. response.body response)))
                          ))))
    ))
@@ -54,12 +63,3 @@
                     response response
                     status (if response response.status null)})
     ))
-
-(defmacro ->
-  [& operations]
-  (reduce
-   (fn [form operation]
-     (cons (first operation)
-           (cons form (rest operation))))
-   (first operations)
-   (rest operations)))
