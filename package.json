@@ -1,6 +1,6 @@
 {
   "name": "http-resource",
-  "version": "1.0.2-alpha.2",
+  "version": "1.0.2",
   "description": "create the resource class.",
   "main": "dist/http/resource.js",
   "scripts": {
